@@ -8,6 +8,7 @@ pipeline {
                 sh "mvn clean"
                }
             }
+            }
         }
 
         stage('Compile') {
@@ -17,6 +18,7 @@ pipeline {
                 sh "./mvn compile"
                 }
             }
+            }
         }
 
         stage('Test') {
@@ -25,6 +27,7 @@ pipeline {
                 script {
                 sh "./mvn test"
                 }
+            }
             }
         }
     }
